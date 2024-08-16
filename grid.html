@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            /* Default for larger screens */
+            background-color: #2ff321;
+            padding: 10px;
+            row-gap: 25px;
+        }
+
+        .grid-item {
+            background-color: rgba(26, 67, 9, 0.8);
+            border: 1px solid rgba(255, 238, 238, 0.8);
+            padding: 20px;
+            font-size: 25px;
+            text-align: center;
+            color: #ffffff;
+        }
+        .grid-item-A{
+            grid-column-start: 1;
+            grid-column-end: 3;
+            background-color: rgba(26, 67, 9, 0.8);
+            border: 1px solid rgba(255, 238, 238, 0.8);
+            padding: 20px;
+            font-size: 25px;
+            text-align: center;
+            color: #ffffff;
+        }
+        .grid-item-L{
+            grid-column-start: 2;
+            grid-column-end: 2;
+            background-color: rgba(26, 67, 9, 0.8);
+            border: 1px solid rgba(255, 238, 238, 0.8);
+            padding: 20px;
+            font-size: 25px;
+            text-align: center;
+            color: #ffffff;
+        }
+
+
+        /* for using responsiveness */
+        @media (max-width: 768px) {
+            .grid-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .grid-container {
+                grid-template-columns:
+                    1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+ 
+    <h1>Hi, I am GRID</h1>
+
+    <div class="grid-container">
+        <div class="grid-item">A</div>
+        <div class="grid-item">B</div>
+        <div class="grid-item">C</div>
+        <div class="grid-item">D</div>
+        <div class="grid-item">E</div>
+        <div class="grid-item">F</div>
+        <div class="grid-item">G</div>
+        <div class="grid-item">H</div>
+        <div class="grid-item">I</div>
+        <div class="grid-item">J</div>
+        <div class="grid-item">K</div>
+        <div class="grid-item">L</div>
+
+    </div>
+
+    
+    <h2>The column-gap property sets the gap between the columns:
+    </h2>
+    <p>.grid-container {
+        display: grid;
+        column-gap: 25px;
+      }
+    </p>
+    <h2>The row-gap property sets the gap between the columns:
+
+    </h2>
+    <p>.grid-container {
+        display: grid;
+        row-gap: 25px;      
+    }
+    </p>
+    <h2>We use Grid lines to arrange grid items</h2>
+    <p>
+        .name_of_your_grid {
+        grid-column-start: 1;
+        grid-column-end: 3;
+      }
+    </p>
+    <p>
+        .name_of_your_grid {
+            grid-row-start: 1;
+            grid-row-end: 3;
+          }
+    </p>  
+
+
+
+</body>
+
+</html>

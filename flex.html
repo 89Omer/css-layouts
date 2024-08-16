@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.flex-container {
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: rgb(30, 34, 39);
+  
+}
+
+.flex-container > div {
+  background-color: #cebdbd;
+  width: 100%;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+</style>
+</head>
+<body>
+<h1>Hi, I am a FLEX box</h1>
+
+<div class="flex-container">
+  <div>9</div>
+  <div>8</div>
+  <div>7</div>  
+  <div>6</div>
+  <div>5</div>
+  <div>4</div>  
+  <div>3</div>
+  <div>2</div>
+  <div>1</div>
+
+</div>
+
+<p>Try to resize the browser window.</p>
+<p>By using container with "flex-wrap: nowrap;" will never wrap its items.I repeat never</p>
+
+<h2>I have following properties</h2>
+<p> <b>flex-direction: column;</b> The column value stacks the flex items vertically (from top to bottom)</p>
+<p> <b>flex-direction: column-reverse;</b> The column-reverse value stacks the flex items vertically (but from bottom to top)</p>
+<p> <b>flex-direction: row</b> The row value stacks the flex items horizontally (from left to right)</p>
+<p> <b>flex-direction: wrap</b>The wrap value specifies that the flex items will wrap if necessary</p>
+<p> <b>flex-direction: nowrap</b>The nowrap value specifies that the flex items will not wrap (this is default)</p>
+
+</body>
+</html>
